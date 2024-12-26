@@ -75,7 +75,7 @@ summary(ols_model)
   vif_values <- vif(ols_model)
   print(vif_values)
 
-  # 5. Plot residual spasial model terbaik 
+  # 5. Plot residual OLS
   residuals_best <- residuals(ols_model) 
   shapefile$Residuals <- residuals_best
   tm_shape(shapefile) +
